@@ -2,6 +2,7 @@ package cases
 {
 	import flexunit.framework.Assert;
 	import flexunit.framework.TestCase;
+	import hu.vizoli.tddkata.binarysearch.util.SearchUtil;
 	
 	/**
 	 * A binaris search-t tesztelo osztaly

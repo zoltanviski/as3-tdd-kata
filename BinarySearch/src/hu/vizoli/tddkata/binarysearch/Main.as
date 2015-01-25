@@ -1,5 +1,4 @@
-package 
-{
+package hu.vizoli.tddkata.binarysearch {
 	import flash.display.Sprite;
 	import flash.events.Event;
 	
