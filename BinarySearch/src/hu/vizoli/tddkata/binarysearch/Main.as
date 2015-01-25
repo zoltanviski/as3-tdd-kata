@@ -1,9 +1,11 @@
-package hu.vizoli.tddkata.binarysearch {
+package hu.vizoli.tddkata.binarysearch 
+{
 	import flash.display.Sprite;
 	import flash.events.Event;
 	
 	/**
-	 * ...
+	 * The Main of the BinarySearch.
+	 * 
 	 * @author vizoli
 	 */
 	public class Main extends Sprite 
