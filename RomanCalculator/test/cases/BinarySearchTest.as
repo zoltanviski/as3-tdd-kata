@@ -2,6 +2,8 @@ package cases
 {
 	import flexunit.framework.Assert;
 	import flexunit.framework.TestCase;
+	import hu.vizoli.tddkata.romancalculator.constant.CNumberFormats;
+	import hu.vizoli.tddkata.romancalculator.operation.RomanOperations;
 	
 	/**
 	 * A binaris search-t tesztelo osztaly

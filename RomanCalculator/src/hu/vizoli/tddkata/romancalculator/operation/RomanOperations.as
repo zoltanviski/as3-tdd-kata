@@ -1,6 +1,8 @@
-package  
+package hu.vizoli.tddkata.romancalculator.operation
 {
 	import flash.utils.Dictionary;
+	import hu.vizoli.tddkata.romancalculator.constant.CNumberFormats;
+	import hu.vizoli.tddkata.romancalculator.constant.CPossibleRomansPairs;
 	
 	/**
 	 * Romain szamokkal vegzett muveleteket vegzo osztaly

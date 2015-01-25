@@ -1,0 +1,26 @@
+romai szamot ertelmezni (string-int)
+meg kell feleltetni a romai szamokat normal szamokka
+int szamokat osszeadni
+
+
+
+int->string ( romai szam)
+
+dataprovider-el kiprobalas
+
+
+XIX + MMMCDXXIII = MMMCDXLII
+CMXCIX + CXI = MCX
+DCLXVI + CMXCIX = MDCLXV
+LI + XV = LXVI
+CDXCIX + XLIX = DXLVIII
+XIV + LX = LXXIV
+XXIII + XXVI = XLIX
+XCIX + MCMXCIX = MMXCVII
+IIII + V = ERROR
+XIIX + LXVI = ERROR
+IM + I = ERROR
+VM + IX = ERROR
+I + MMMCMXCIX = ERROR
+MM + MM = ERROR
+M + MMM = ERROR

@@ -1,4 +1,4 @@
-package  
+package hu.vizoli.tddkata.romancalculator.constant 
 {
 	/**
 	 * ...

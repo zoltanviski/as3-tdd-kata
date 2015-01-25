@@ -1,4 +1,4 @@
-package  
+package hu.vizoli.tddkata.romancalculator.operation 
 {
 	/**
 	 * A roman szamok sorrendjere vonatkozo osztaly

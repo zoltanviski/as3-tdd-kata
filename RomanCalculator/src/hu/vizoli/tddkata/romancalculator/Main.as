@@ -1,5 +1,4 @@
-package 
-{
+package hu.vizoli.tddkata.romancalculator {
 	import flash.display.Sprite;
 	import flash.events.Event;
 	
