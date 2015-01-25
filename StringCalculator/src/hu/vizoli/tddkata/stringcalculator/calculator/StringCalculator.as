@@ -1,5 +1,9 @@
-package  
+package hu.vizoli.tddkata.stringcalculator.calculator
 {
+	import hu.vizoli.tddkata.stringcalculator.constant.CRegExp;
+	import hu.vizoli.tddkata.stringcalculator.util.ArrayUtils;
+	import hu.vizoli.tddkata.stringcalculator.util.MathUtils;
+	import hu.vizoli.tddkata.stringcalculator.util.StringUtils;
 	/**
 	 * Calculate Strings as Numbers.
 	 * 

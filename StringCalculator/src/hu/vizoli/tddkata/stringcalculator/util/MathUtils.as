@@ -1,5 +1,4 @@
-package 
-{
+package hu.vizoli.tddkata.stringcalculator.util {
 	/**
 	 * Utils of Math related operations.
 	 * 

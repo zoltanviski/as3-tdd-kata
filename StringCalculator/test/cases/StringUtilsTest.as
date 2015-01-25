@@ -2,6 +2,7 @@ package cases
 {
 	import flexunit.framework.Assert;
 	import flexunit.framework.TestCase;
+	import hu.vizoli.tddkata.stringcalculator.util.StringUtils;
 	
 	/**
 	 * StringCalculator tests

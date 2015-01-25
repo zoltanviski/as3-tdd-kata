@@ -1,4 +1,4 @@
-package 
+package hu.vizoli.tddkata.stringcalculator 
 {
 	import flash.display.Sprite;
 	import flash.events.Event;
@@ -18,7 +18,7 @@ package
 			}
 			else 
 			{
-				this.addEventListener(Event.ADDED_TO_STAGE, this.init);
+				this.addEventListener( Event.ADDED_TO_STAGE, this.init );
 			}
 		}
 		
