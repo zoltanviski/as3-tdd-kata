@@ -1,5 +1,4 @@
-package 
-{
+package hu.vizoli.tddkata.lcddigits {
 	import flash.display.Sprite;
 	import flash.events.Event;
 	

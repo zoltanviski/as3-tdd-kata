@@ -1,6 +1,11 @@
-package  
+package hu.vizoli.tddkata.lcddigits.converter 
 {
 	import flash.utils.Dictionary;
+	import hu.vizoli.tddkata.lcddigits.constant.CLCDSymbol;
+	import hu.vizoli.tddkata.lcddigits.constant.CNewLine;
+	import hu.vizoli.tddkata.lcddigits.util.MathUtil;
+	import hu.vizoli.tddkata.lcddigits.util.StringUtil;
+	import hu.vizoli.tddkata.lcddigits.util.VectorUtil;
 	
 	/**
 	 * Convert digits to other symbols.

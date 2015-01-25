@@ -1,4 +1,4 @@
-package  
+package hu.vizoli.tddkata.lcddigits.util 
 {
 	/**
 	 * Utils of Math.

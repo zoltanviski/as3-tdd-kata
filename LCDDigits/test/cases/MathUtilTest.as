@@ -2,6 +2,7 @@ package cases
 {
 	import flexunit.framework.TestCase;
 	import flexunit.framework.Assert;
+	import hu.vizoli.tddkata.lcddigits.util.MathUtil;
 	
 	/**
 	 * MathUtil tests.

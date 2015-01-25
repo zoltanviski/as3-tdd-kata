@@ -1,4 +1,4 @@
-package  
+package hu.vizoli.tddkata.lcddigits.constant 
 {
 	/**
 	 * Constans of new line characters.
