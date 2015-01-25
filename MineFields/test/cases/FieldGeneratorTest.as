@@ -2,6 +2,9 @@ package cases
 {
 	import flexunit.framework.Assert;
 	import flexunit.framework.TestCase;
+	import hu.vizoli.tddkata.minefields.constant.CFieldType;
+	import hu.vizoli.tddkata.minefields.field.FieldGenerator;
+	import hu.vizoli.tddkata.minefields.util.StringUtil;
 	
 	/**
 	 * FieldGenerator tests.

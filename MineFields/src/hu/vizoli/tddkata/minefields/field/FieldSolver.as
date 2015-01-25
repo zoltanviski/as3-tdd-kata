@@ -1,5 +1,9 @@
-package  
+package hu.vizoli.tddkata.minefields.field 
 {
+	import hu.vizoli.tddkata.minefields.constant.CFieldType;
+	import hu.vizoli.tddkata.minefields.constant.CNewLineCharacter;
+	import hu.vizoli.tddkata.minefields.util.StringUtil;
+	
 	/**
 	 * This class responsible for solving the generated field of Mine Fields.
 	 * 

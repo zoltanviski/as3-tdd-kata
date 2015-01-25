@@ -1,5 +1,4 @@
-package  
-{
+package hu.vizoli.tddkata.minefields.util {
 	/**
 	 * Math utils.
 	 * 

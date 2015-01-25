@@ -1,4 +1,4 @@
-package  
+package hu.vizoli.tddkata.minefields.constant 
 {
 	/**
 	 * Constant of new line characters.

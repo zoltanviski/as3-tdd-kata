@@ -1,4 +1,4 @@
-package  
+package hu.vizoli.tddkata.minefields.constant 
 {
 	/**
 	 * Type of fields.
