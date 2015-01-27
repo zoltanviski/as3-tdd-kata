@@ -52,10 +52,10 @@
   </includeLibraries>
   <!-- SWC Libraries -->
   <libraryPaths>
-    <element path="lib\flexunit-4.1.0-8-as3_4.1.0.16076.swc" />
-    <element path="lib\flexUnit4UIRunner.swc" />
-    <element path="lib\hamcrest-as3.swc" />
     <element path="lib\mockolate-0.12.4-as3.swc" />
+    <element path="lib\hamcrest-as3-flex-1.1.3.swc" />
+    <element path="lib\flexunit-4.2.0-20140410-flex_4.12.0.swc" />
+    <element path="lib\flexUnit4UIRunner.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

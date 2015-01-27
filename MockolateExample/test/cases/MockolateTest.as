@@ -34,7 +34,6 @@ package cases
 			
 		}
 		
-		// Nagy kerdes szamomra, hogy ez miert dob hibat...
 		[Test]
 		public function testClass1GetValue():void
 		{
