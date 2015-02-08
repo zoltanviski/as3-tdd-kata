@@ -64,11 +64,11 @@ package cases
 		[Test]
 		public function testCopyCallGetCharOnSourceInSequenceAndStopWhenNewLine():void
 		{
-			var sequence:Sequence = new Sequence();
+			this._sequence = new Sequence();
 			
-			mock( this.source ).method( "getChar" ).returns( CopierTest.A ).inSequence( sequence ).once();
-			mock( this.source ).method( "getChar" ).returns( CopierTest.B ).inSequence( sequence ).once();
-			mock( this.source ).method( "getChar" ).returns( CNewLine.SIMPLE ).inSequence( sequence ).once();
+			mock( this.source ).method( "getChar" ).returns( CopierTest.A ).inSequence( this._sequence ).once();
+			mock( this.source ).method( "getChar" ).returns( CopierTest.B ).inSequence( this._sequence ).once();
+			mock( this.source ).method( "getChar" ).returns( CNewLine.SIMPLE ).inSequence( this._sequence ).once();
 			
 			this._copier.copy();
 		} 
