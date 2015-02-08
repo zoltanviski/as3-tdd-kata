@@ -43,6 +43,7 @@ package cases
 		override public function setUp():void 
 		{
 			this._copier = new Copier( this.source, this.destination );
+			this._sequence = new Sequence();
 		}
 		
 		[After]
@@ -51,6 +52,7 @@ package cases
 			this._copier = null;
 			this.source = null;
 			this.destination = null;
+			this._sequence = null;
 		}
 		
 		[Test]
@@ -64,8 +66,6 @@ package cases
 		[Test]
 		public function testCopyCallGetCharOnSourceInSequenceAndStopWhenNewLine():void
 		{
-			this._sequence = new Sequence();
-			
 			mock( this.source ).method( "getChar" ).returns( CopierTest.A ).inSequence( this._sequence ).once();
 			mock( this.source ).method( "getChar" ).returns( CopierTest.B ).inSequence( this._sequence ).once();
 			mock( this.source ).method( "getChar" ).returns( CNewLine.SIMPLE ).inSequence( this._sequence ).once();
@@ -76,8 +76,6 @@ package cases
 		[Test]
 		public function testCopyCharacters():void
 		{
-			this._sequence = new Sequence();
-			
 			mock( this.source ).method( "getChar" ).returns( CopierTest.A ).inSequence( this._sequence ).once();
 			mock( this.source ).method( "getChar" ).returns( CopierTest.B ).inSequence( this._sequence ).once();
 			mock( this.source ).method( "getChar" ).returns( CNewLine.SIMPLE ).inSequence( this._sequence ).once();
@@ -93,8 +91,6 @@ package cases
 		[Test(async)]
 		public function testCopyCharactersAfterEventDispatched():void
 		{
-			this._sequence = new Sequence();
-			
 			mock( this.source ).method( "getChar" ).returns( CopierTest.A ).inSequence( this._sequence ).once();
 			mock( this.source ).method( "getChar" ).returns( CopierTest.B ).inSequence( this._sequence ).once();
 			mock( this.source ).method( "getChar" ).returns( CNewLine.SIMPLE ).inSequence( this._sequence ).once();
