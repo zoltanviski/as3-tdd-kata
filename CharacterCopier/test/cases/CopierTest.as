@@ -1,6 +1,5 @@
 package cases
 {
-	import flash.events.Event;
 	import flexunit.framework.Assert;
 	import flexunit.framework.TestCase;
 	import hu.vizoli.common.constant.character.CNewLine;
@@ -23,8 +22,8 @@ package cases
 	{
 		private static const A:String = "A";
 		private static const B:String = "B";
-		private static const C:String = "C";
-		
+		private static const NOT_ENGLISH_CHARACTER:String = "Á";
+		private static const NOT_ENGLISH_CHARACTER_ERROR_MESSAGE:String = "This is not an english character!";
 		private static const TIMEOUT_VALUE:int = 10;
 		
 		[Rule]
@@ -103,6 +102,23 @@ package cases
 			var asyncHandler:Function = Async.asyncHandler( this, checkCopyFinishedEvent, CopierTest.TIMEOUT_VALUE, { expected: CopierTest.A + CopierTest.B }, this.handleTimeout );
 			
 			this._copier.addEventListener( CopierEvent.COPY_FINISHED, asyncHandler );
+			this._copier.copy();
+		}
+		
+		[Test]
+		public function testNotEnglishCharacterErrorHandling():void
+		{
+			mock( this.source ).method( "getChar" ).returns( CopierTest.A ).inSequence( this._sequence ).once();
+			mock( this.source ).method( "getChar" ).returns( CopierTest.NOT_ENGLISH_CHARACTER ).inSequence( this._sequence ).once();
+			mock( this.source ).method( "getChar" ).returns( CopierTest.B ).inSequence( this._sequence ).once();
+			mock( this.source ).method( "getChar" ).returns( CNewLine.SIMPLE ).inSequence( this._sequence ).once();
+			
+			this._sequence = new Sequence();
+			
+			mock( this.destination ).method( "setChar" ).args( CopierTest.A ).inSequence( this._sequence ).once();
+			mock( this.destination ).method( "setChar" ).args( CopierTest.NOT_ENGLISH_CHARACTER ).throws( new Error( NOT_ENGLISH_CHARACTER_ERROR_MESSAGE ) );
+			mock( this.destination ).method( "setChar" ).args( CopierTest.B ).inSequence( this._sequence ).once();
+			
 			this._copier.copy();
 		}
 		

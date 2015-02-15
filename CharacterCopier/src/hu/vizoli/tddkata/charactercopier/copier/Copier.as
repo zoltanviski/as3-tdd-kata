@@ -14,7 +14,7 @@ package hu.vizoli.tddkata.charactercopier.copier
 		private var _source:ISource;
 		private var _destination:IDestination;
 		
-		public function Copier( source:ISource, destination:IDestination) 
+		public function Copier( source:ISource, destination:IDestination ) 
 		{
 			this._source = source;
 			this._destination = destination;
@@ -38,10 +38,28 @@ package hu.vizoli.tddkata.charactercopier.copier
 				}
 				
 				copied += char;
-				this._destination.setChar( char );
+				
+				this.setCharToDestination( char );
 			}
 			
 			this.dispatchFinishedEvent( copied );
+		}
+		
+		/**
+		 * Add a charactet to destination.
+		 * 
+		 * @param	char
+		 */
+		private function setCharToDestination( char:String ):void
+		{
+			try
+			{
+				this._destination.setChar( char );
+			}
+			catch ( e:Error )
+			{
+				trace( e.message )	
+			}
 		}
 		
 		/**
